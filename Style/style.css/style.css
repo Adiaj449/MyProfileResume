@@ -1,0 +1,17 @@
+a{
+    text-decoration: none !important;
+}
+hr
+{
+    color: red !important;
+}
+.header
+{
+    background-color: black;
+    color:white;
+}
+.footer
+{
+    background-color: black;
+    color: orange;
+}
