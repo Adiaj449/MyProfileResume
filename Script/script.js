@@ -47,7 +47,7 @@ function createProfile()
     row.appendChild(col1);
     row.appendChild(col2);
     
-    var profileInformation = "<br><br><br><h2 ><span>Ajinkya R. Algonda</span></h2><h6>Full Stack Developer | Micorosft Certified Associate - Cloud</h6><h6>Mobile : +91-9049068449    | <a href="+"mailto:ajinkyaalgonda449@gmail.com"+">Email : ajinkyaalgonda449@gmail.com</a></h6>";
+    var profileInformation = "<br><br><br><h2 ><span>Ajinkya R. Algonda</span></h2><h6>Database Developer - PostgreSQL </h6><h6>Mobile : +91-9049068449    | <a href="+"mailto:ajinkyaalgonda449@gmail.com"+">Email : ajinkyaalgonda449@gmail.com</a></h6>";
     col1.innerHTML= profileInformation;
     
     var profileImage = document.createElement('img');
@@ -79,7 +79,7 @@ function createAbout()
     
     var aboutInfo = document.createElement('div');
     aboutInfo.setAttribute('class','col-sm-4 text-left');
-    aboutInfo.innerHTML = " 1.9 years of experience in Software Engineering, Currently working for One of big Pharma Client in the World.  <p>Experience in Human and Public sector application development like New York Fire Department. </p> <p>AWS Cloud Practitioner, Azure Cloud AI Certified. Experience of SDLC Model like Waterfall Model, Agile. </p>";
+    aboutInfo.innerHTML = " I am cloud database developer, Majorly worked in PostgreSQL database tech with 4.4 + years.I am currenlty working for Product based oraganisation and previously worked for Deloitte and Accenture.";
     row.appendChild(aboutInfo);
     
     var downloadPdf = document.createElement('div');
@@ -177,7 +177,7 @@ function getAwardDetails(params) {
     
     var aboutInfo = document.createElement('div');
     aboutInfo.setAttribute('class','col-sm-4 text-left');
-    aboutInfo.innerHTML = "<p> Microsoft Azure Cloud AI Certified Associate 2019. </p><p> Oracle Cloud Application Integration Associate 2019.</p><p> Pursuing knowledge in AWS Cloud for developer and Architecture complete in July. </p>";
+    aboutInfo.innerHTML = "<p> Microsoft Azure Cloud AI Certified Associate 2019. </p><p> Oracle Cloud Application Integration Associate 2019.</p><p> Azure Data Fundamental Engineer </p>";
     row.appendChild(aboutInfo);
     
     var downloadPdf = document.createElement('div');
