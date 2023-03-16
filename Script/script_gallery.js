@@ -1,13 +1,10 @@
-function buildResume()
+function buildGallery()
 {
     var body = document.getElementsByTagName('body');
     document.body.append(createHeader());
     document.body.append(createProfile());
     document.body.append(createAbout());
-    document.body.append(getEducationDetails());
-    document.body.append(getResearchDetails());
-    document.body.append(getAwardDetails());
-    document.body.append(createFooter());
+   
 }
 function createHeader(params) {
     var container = document.createElement('div');
@@ -23,7 +20,7 @@ function createHeader(params) {
 
     var col2 = document.createElement('div');
     col2.setAttribute('class','col-sm-12');
-    col2.innerHTML ="<a href="+"https://github.com/Adiaj449"+"><span class="+"menu"+">Github </span></a><a target="+"_blank"+"+ href="+"https://www.linkedin.com/in/ajinkya-algonda-4b9b3180"+"><span class="+"menu"+">LinkedIn </span></a><a target="+"_blank"+" href="+"./gallery.html"+"><span class="+"menu"+">Gallery</span></a>";
+    col2.innerHTML ="<a href="+"https://github.com/Adiaj449"+"><span class="+"menu"+">Github </span></a><a target="+"_blank"+"+ href="+"https://www.linkedin.com/in/ajinkya-algonda-4b9b3180"+"><span class="+"menu"+">LinkedIn </span></a><a target="+"_blank"+" href="+"#"+"><span class="+"menu"+">Image Gallery</span></a>";
     
     row.appendChild(col1);
     row.appendChild(col2);
@@ -46,9 +43,8 @@ function createProfile()
     
     row.appendChild(col1);
     row.appendChild(col2);
+
     
-    var profileInformation = "<br><br><br><h2 ><span>Ajinkya R. Algonda</span></h2><h6>Full Stack Developer | Micorosft Certified Associate - Cloud</h6><h6>Mobile : +91-9049068449    | <a href="+"mailto:ajinkyaalgonda449@gmail.com"+">Email : ajinkyaalgonda449@gmail.com</a></h6>";
-    col1.innerHTML= profileInformation;
     
     var profileImage = document.createElement('img');
     profileImage.setAttribute('class','rounded');
@@ -56,6 +52,12 @@ function createProfile()
     profileImage.setAttribute('height','450px');
     col2.appendChild(profileImage);
     
+    var profileImage1 = document.createElement('img');
+    profileImage1.setAttribute('class','rounded');
+    profileImage1.setAttribute('src','./Images/img3.jpg');
+    profileImage1.setAttribute('height','450px');
+    col1.appendChild(profileImage1);
+
     var hori = document.createElement('hr');
     hori.setAttribute('class','bg-danger');
     container.appendChild(hori);
@@ -71,16 +73,19 @@ function createAbout()
     var row = document.createElement('div');
     row.setAttribute('class','row mt-5');
     container.append(row);
-    
-    var about = document.createElement('div');
-    about.setAttribute('class','col-sm-4 text-center');
-    about.innerHTML = "<h3>About</h3>";
+
+
+    var about = document.createElement('img');
+    about.setAttribute('class','col-sm-12 text-center');
+    about.setAttribute('src','./Images/img1.jpg');
+    about.setAttribute('height','750px');
     row.appendChild(about);
     
-    var aboutInfo = document.createElement('div');
-    aboutInfo.setAttribute('class','col-sm-4 text-left');
-    aboutInfo.innerHTML = " 1.9 years of experience in Software Engineering, Currently working for One of big Pharma Client in the World.  <p>Experience in Human and Public sector application development like New York Fire Department. </p> <p>AWS Cloud Practitioner, Azure Cloud AI Certified. Experience of SDLC Model like Waterfall Model, Agile. </p>";
-    row.appendChild(aboutInfo);
+    var aboutInfo = document.createElement('img');
+    aboutInfo.setAttribute('class','col-sm-12 text-left');
+    aboutInfo.setAttribute('src','./Images/img2.jpg');
+    about.setAttribute('height','750px');
+    row.appendChild(aboutInfo); 
     
     var downloadPdf = document.createElement('div');
     downloadPdf.setAttribute('class','col-sm-4 text-center');
@@ -112,7 +117,7 @@ function getEducationDetails(){
     
     var aboutInfo = document.createElement('div');
     aboutInfo.setAttribute('class','col-sm-4 text-left');
-    aboutInfo.innerHTML = "<b>Bachelor of Engineering</b><p><span>MIT World Peace University, Pune. 038</span></p>";
+    aboutInfo.innerHTML = "<b>Bachelor of Engineering</b><p><span>MIT World Peace University, Pune. 038 Formally Know as MIT PUNE</span></p>";
     row.appendChild(aboutInfo);
     
     var downloadPdf = document.createElement('div');
@@ -177,7 +182,7 @@ function getAwardDetails(params) {
     
     var aboutInfo = document.createElement('div');
     aboutInfo.setAttribute('class','col-sm-4 text-left');
-    aboutInfo.innerHTML = "<p> Microsoft Azure Cloud AI Certified Associate 2019. </p><p> Oracle Cloud Application Integration Associate 2019.</p><p> Pursuing knowledge in AWS Cloud for developer and Architecture complete in July. </p>";
+    aboutInfo.innerHTML = "<p> Microsoft Azure Cloud AI Certified Associate 2019. </p><p> Oracle Cloud Application Integration Associate 2019.</p> <p> Pursuing knowledge in AWS Cloud for developer and Architecture complete in July. </p><p> Microsoft Azure Cloud Data Engineer Associate 2021. </p>";
     row.appendChild(aboutInfo);
     
     var downloadPdf = document.createElement('div');
